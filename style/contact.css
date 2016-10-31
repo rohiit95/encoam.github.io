@@ -1,0 +1,120 @@
+#middle a{
+    text-decoration: none;
+    color: white;
+}
+#contnt{
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+#addr{
+    background-color: #f2efef;
+    width: 80%;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+p{
+    font-family: cursive;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+#contct{
+    background-color: #f2efef;
+    width: 80%;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+#contnt hr{
+    margin:5px;
+}
+#home{
+   background-color: #f2efef;
+    width: 100%; 
+    padding: 15px;
+    text-align: left
+}
+#home a{
+    text-decoration: none;
+    color: black;
+    margin: 3px;
+}
+#probs{
+    width: 100%;
+     margin: 10px;
+    margin-left: 5%; 
+    margin-right: 5%;
+    display: block;
+    float: left;
+    padding-right: 2.5%;
+    margin: 10px;
+}
+#probs div{
+     background-color: #f2efef;
+    width:20%;
+    float:left;
+    height: 140px; 
+    margin-left: 4%;
+}
+#probs img{
+    width: 100%;
+    height: 100%;
+}
+#con_form{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: block;
+    background-color: #f2efef;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#con_form form{
+    width:80%;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+   
+    display: block;
+}
+#con_form input{
+   height: 40px;
+     padding-left: 10px;
+    width:100%;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #f8f0f1;
+}
+#con_form button{
+   height: 40px;
+     padding-left: 10px;
+    width:100%;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #757775;
+    font-size: 30px;
+    color: #ded7d7;
+}
+#con_form textarea{
+   height: 150px;
+    font-size: 20px;
+    border: solid black 1px;
+    border-radius: 10px;
+     padding-left: 10px;
+    width:100%;
+    margin-bottom: 10px;
+    background-color: #f8f0f1;
+}

@@ -1,0 +1,67 @@
+#di{
+    margin: 20px;
+}
+#custom{
+    width: 90%;   
+    margin: 20px;
+        margin-left:5%;
+    padding: 10px;
+    clear: both;
+    display: none;
+    background-color: #4a4c4d;
+    color: white;
+}
+#custom h2{
+    text-align: center;
+}
+#cus_but{
+    color: black;
+    font-size: 25px;
+    width: 20%;
+    margin-left: 40%;
+    height: 40px;
+    border: solid white 1px;
+    background-color: #88dded;
+    border-radius: 15px;
+}
+.img_opt li{
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 18%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    text-align: center;
+    font-size: 17px;
+}
+.img_opt li:hover{
+    border: solid red 1px;
+    opacity: 0.8;
+}
+.img_opt li img{
+    width: 100%;    
+}
+.img_opt li input{
+   float: right; 
+}
+
+.desc { color:#6b6b6b;}
+.desc a {color:#0092dd;}
+dl{display: inline-block;width: 20%; margin-right: 5%;}
+position: relative;}
+.dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; position: relative;}
+.dropdown dd { position:relative; }
+.dropdown a, .dropdown a:visited { color:#816c5b; text-decoration:none; outline:none;}
+.dropdown a:hover { color:#5d4617;}
+.dropdown dt a:hover { color:#5d4617; border: 1px solid #d0c9af;}
+.dropdown dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                border:1px solid #d4ca9a; width:150px;}
+.dropdown dt a span {cursor:pointer; display:block; padding:5px;}
+.dropdown dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                  left:0px; padding:0px 0px; position:absolute; top:2px; width:auto; min-width:170px; list-style:none;}
+.dropdown span.value { display:none;}
+.dropdown dd ul li a { padding:5px; display:block;}
+.dropdown dd ul li a:hover { background-color:#d0c9af;}
+
+.dropdown img.flag { border:none; vertical-align:middle; height: 100px; width: 100px; margin-left:10px; }
+.flagvisibility { display:none;}
