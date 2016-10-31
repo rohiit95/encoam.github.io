@@ -1,0 +1,545 @@
+
+    <html>
+    <head>
+        <title>Trousers</title>
+        <link href="style/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="style/jquery-ui.css">
+<link href="style/items.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/simpleCart.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
+<script src="js/jquery.easing.min.js"></script>
+        
+        
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("fast");
+            });
+            $("#accl").click(function(){
+                $("#pan").slideToggle("fast");
+            }); 
+            
+           
+        });
+        
+    </script>
+        <link rel="stylesheet" href="style/index.css" type="text/css">
+        <link href="style/category.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="top">
+                <div id="fflip">
+                <div id="flip"></div> 
+                 </div>
+                <div id="topleft">
+                <!-- <ul>
+                    <li><a href="#"><img src="images/account.png"></a></li>
+                    <li><a href="#"><img src="images/phone.png"></a></li>
+                    <li><a href="#"><img src="images/heart.png"></a></li>
+                    
+                </ul> -->
+                    <a href="login.html"> Login / Sign Up </a>
+                </div>
+                <div id="middle"><a href="index.html" style="color:white;">Encoam Solutions</div></a>
+                <div class="srch"><img src="images/serch.png"><input type="text" placeholder="Search"></div>
+                <div id="topright">
+                    <ul>
+                    <li value="Login/Sign Up"><a href="login.html"><img src="images/account.png"></a></li>
+                    <li><a href="#"><img src="images/phone.png"></a></li>
+                    <li><a href="#"><img src="images/heart.png"></a></li>
+                    <li><a href="#"><img src="images/cart.png"></a></li>
+                </ul></div>
+    
+            </div>
+            <div id="bottom">
+            <div id="men">
+               <ul>
+                    <li><a href="new.html">NEW</a></li>
+                    <li><a href="suits.html">SUITS</a></li>
+                    <li><a href="shirts.html">SHIRTS</a></li>
+                   <a href="tshirts.html"><li>T-SHIRTS</li></a>
+                   <a ><li id="present">TROUSERS</li></a>
+                  <a href="#"><li><div id="accl" > ACCESSORIES</div></li></a>
+                    <li><a href="about.html">ABOUT US</a></li>
+                   <li i><a href="contact.html">CONTACT</a></li>
+                </ul> 
+                
+            </div>
+               <div class="srch"><img src="images/serch.png"><input type="text" placeholder="Search"></div> 
+        </div>
+            <div class="mobile">
+            <div id="panel">
+               <ul>
+                   <a href="new.html"><li>NEW</li></a>
+                    <a href="suits.html"><li>SUITS</li></a>
+                    <a href="shirts.html"><li>SHIRTS</li></a>
+                   <a href="tshirts.html"><li>T-SHIRTS</li></a>
+                   <a href="trousers.html"><li>TROUSERS</li></a>
+                   <a><li >ACCESSORIES</li></a>
+                    <a href="about.html"><li>ABOUT US</li></a>
+                   <a href="contact.html"><li>CONTACT US</li></a>
+                </ul> 
+                <div id="opt">
+                    <h2>Account</h2>
+                    <ul>
+                        <a href="#"> <li>Login</li></a>
+                         <a href="#"> <li>Sign Up</li></a>
+                    </ul>
+                </div>
+                <div id="opt1">      
+                     <ul>
+                    <li><a href="#"><img src="images/account.png"></a></li>
+                    <li><a href="#"><img src="images/phone.png"></a></li>
+                    <li><a href="#"><img src="images/heart.png"></a></li>
+                    <li><a href="#"><img src="images/cart.png"></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+            <div id="pan">
+               <ul>
+                    <a href="#"><li>Tie</li></a>
+                    <a href="#"><li>Tie-pins</li></a>
+                   <a href="#"><li>Cufflinks</li></a>
+                   <a href="#"><li>Collar Pins</li></a>
+                   <a href="#"><li>Pocket Square</li></a>
+                </ul> </div>
+        </div>
+        <div class="men-wear">
+	<div class="container">
+		<div class="col-md-4 products-left">
+			<div class="filter-price">
+				<h3>Filter By Price</h3>
+					<ul class="dropdown-menu6">
+						<li>                
+							<div id="slider-range"></div>							
+							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+						</li>			
+					</ul>
+							<!---->
+							<script type='text/javascript'>//<![CDATA[ 
+							$(window).load(function(){
+							 $( "#slider-range" ).slider({
+										range: true,
+										min: 0,
+										max: 9000,
+										values: [ 1000, 7000 ],
+										slide: function( event, ui ) {  $( "#amount" ).val( "INR" + ui.values[ 0 ] + " - INR" + ui.values[ 1 ] );
+										}
+							 });
+							$( "#amount" ).val( "INR" + $( "#slider-range" ).slider( "values", 0 ) + " - INR" + $( "#slider-range" ).slider( "values", 1 ) );
+
+							});//]]>  
+
+							</script>
+						<script type="text/javascript" src="js/jquery-ui.js"></script>
+					 <!---->
+			</div>
+			<div class="css-treeview">
+				<h4>Categories</h4>
+				<ul class="tree-list-pad">
+					<li><input type="checkbox" checked="checked" id="item-0" /><label for="item-0"><span></span>NEW</label>
+						<ul>
+							<li href="trousers.html"><input type="checkbox" id="item-0-0" /><label for="item-0-0">Ethinic Wear</label>
+							</li>
+							<li href="trousers.html"><input type="checkbox"  id="item-0-1" /><label for="item-0-1">Party Wear</label>
+							</li>
+							<li href="trousers.html"><input type="checkbox"  id="item-0-2" /><label for="item-0-2">Casual Wear</label>
+							</li>
+						</ul>
+					</li>
+					<li><input type="checkbox" id="item-1" checked="checked" /><label for="item-1">MATERIAL</label>
+						<ul>
+							<li href="trousers.html"><input type="checkbox" checked="checked" id="item-1-0" /><label for="item-1-0">Cotton</label>
+                                <li href="trousers.html"><input type="checkbox" checked="checked" id="item-1-0" /><label for="item-1-0">Wollen</label>
+    					
+							</li>
+							
+						</ul>
+					</li>
+					<li><input type="checkbox" checked="checked" id="item-2" /><label for="item-2">BEST OFFERS </label>
+						<ul>
+							<li href="trousers.html"><input type="checkbox"  id="item-2-0" /><label for="item-2-0">Summer Discount Sales</label>
+								
+							</li>
+							<li href="trousers.html"><input type="checkbox" id="item-2-1" /><label for="item-2-1">Exciting Offers</label>
+							</li>
+							<li href="trousers.html"><input type="checkbox" id="item-2-2" /><label for="item-2-2">Flat Discounts</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-8 products-right">
+			
+			
+			<div class="men-wear-bottom">
+				<div class="col-sm-4 men-wear-left">
+					<img class="img-responsive" src="images/trousers/men3.jpg" alt=" " />
+				</div>
+				<div class="col-sm-8 men-wear-right">
+					<h4>Cool Trending Shirts</h4>
+					<p>Welcome to our online store. Here you will get the best shirts at great price.Make most of the sale and gift your near and dear ones with the best shirts available.Here you will get the best shirts at great price.Make most of the sale and gift your near and dear ones with the best shirts available.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+				<div class="col-md-4 product-men no-pad-men">
+					<div class="men-pro-item simpleCart_shelfItem">
+						<div class="men-thumb-item">
+							<img src="images/trousers/ep2.png" alt="" class="pro-image-front">
+							<img src="images/trousers/ep2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+						</div>
+						<div class="item-info-product ">
+									<h4><a href="single.html">Shirts</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">INR 400</span>
+										<del>INR 500</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 product-men no-pad-men">
+					<div class="men-pro-item simpleCart_shelfItem">
+						<div class="men-thumb-item">
+							<img src="images/trousers/a2.png" alt="" class="pro-image-front">
+							<img src="images/trousers/a2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+						</div>
+						<div class="item-info-product ">
+									<h4><a href="single.html">Shirts</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">INR 700</span>
+										<del>INR 850</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 product-men no-pad-men">
+					<div class="men-pro-item simpleCart_shelfItem">
+						<div class="men-thumb-item">
+							<img src="images/trousers/mw2.png" alt="" class="pro-image-front">
+							<img src="images/trousers/mw2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+						</div>
+						<div class="item-info-product ">
+									<h4><a href="single.html">Shirts</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">INR 1200</span>
+										<del>INR 1400</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+						</div>
+					</div>
+				</div>
+				
+				<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="single-pro">
+			
+			<div class="col-md-3 product-men">
+				<div class="men-pro-item simpleCart_shelfItem">
+					<div class="men-thumb-item">
+						<img src="images/trousers/a8.png" alt="" class="pro-image-front">
+						<img src="images/trousers/a8.png" alt="" class="pro-image-back">
+							<div class="men-cart-pro">
+								<div class="inner-men-cart-pro">
+									<a href="single.html" class="link-product-add-cart">Quick View</a>
+								</div>
+							</div>
+							<span class="product-new-top">New</span>				
+					</div>
+					<div class="item-info-product ">
+						<h4><a href="single.html">Shirts</a></h4>
+						<div class="info-product-price">
+							<span class="item_price">INR 500</span>
+							<del>INR 600</del>
+						</div>
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 product-men">
+				<div class="men-pro-item simpleCart_shelfItem">
+					<div class="men-thumb-item">
+						<img src="images/trousers/mw1.png" alt="" class="pro-image-front">
+						<img src="images/trousers/mw1.png" alt="" class="pro-image-back">
+							<div class="men-cart-pro">
+								<div class="inner-men-cart-pro">
+									<a href="single.html" class="link-product-add-cart">Quick View</a>
+								</div>
+							</div>
+							<span class="product-new-top">New</span>				
+					</div>
+					<div class="item-info-product ">
+						<h4><a href="single.html">Shirts</a></h4>
+						<div class="info-product-price">
+							<span class="item_price">INR 400</span>
+							<del>INR 500</del>
+						</div>
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 product-men">
+				<div class="men-pro-item simpleCart_shelfItem">
+					<div class="men-thumb-item">
+						<img src="images/trousers/ep3.png" alt="" class="pro-image-front">
+						<img src="images/trousers/ep3.png" alt="" class="pro-image-back">
+							<div class="men-cart-pro">
+								<div class="inner-men-cart-pro">
+									<a href="single.html" class="link-product-add-cart">Quick View</a>
+								</div>
+							</div>
+							<span class="product-new-top">New</span>				
+					</div>
+					<div class="item-info-product ">
+						<h4><a href="single.html">Shirts</a></h4>
+						<div class="info-product-price">
+							<span class="item_price">INR 400</span>
+							<del>INR 500</del>
+						</div>
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 product-men">
+				<div class="men-pro-item simpleCart_shelfItem">
+					<div class="men-thumb-item">
+						<img src="images/trousers/mw3.png" alt="" class="pro-image-front">
+						<img src="images/trousers/mw3.png" alt="" class="pro-image-back">
+							<div class="men-cart-pro">
+								<div class="inner-men-cart-pro">
+									<a href="single.html" class="link-product-add-cart">Quick View</a>
+								</div>
+							</div>
+							<span class="product-new-top">New</span>				
+					</div>
+					<div class="item-info-product ">
+						<h4><a href="single.html">Shirts</a></h4>
+						<div class="info-product-price">
+							<span class="item_price">INR 400</span>
+							<del>INR 500</del>
+						</div>
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/trousers/g3.png" alt="" class="pro-image-front">
+									<img src="images/trousers/g3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Shirts</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">INR 459</span>
+										<del>INR 697</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/trousers/ep4.png" alt="" class="pro-image-front">
+									<img src="images/trousers/ep4.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Shirts</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">INR 1190</span>
+										<del>INR 1580</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+			<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/trousers/mw2.png" alt="" class="pro-image-front">
+									<img src="images/trousers/mw2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Shirts</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">INR 400</span>
+										<del>INR 500</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+			<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/trousers/g2.png" alt="" class="pro-image-front">
+									<img src="images/trousers/g2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html"> Shirts</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">INR 400</span>
+										<del>INR 500</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="pagination-grid text-right">
+			<ul class="pagination paging">
+				<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+				<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>	
+        <div id="footer">
+            <div id="options">
+                <div class="foot">
+                    <h3>Shopping</h3>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kid</a></li>
+                        <li><a href="#">Suits</a></li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <h3>Customer</h3>
+                    <ul>
+                        <li><a href="#">Help/FAQs</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Buying Guide</a></li>
+                        <li><a href="#">Payment Process</a></li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Exchange & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="follow">
+                    <h3>Follow Us</h3>
+                   <!-- <ul> 
+                        <li><a><img src="images/facebook.png"></a></li>
+                        <li><a><img src="images/facebook.png"></a></li>
+                        <li><a><img src="images/facebook.png"></a></li>
+                        <li><a><img src="images/facebook.png"></a></li>
+                    </ul> -->
+                    <a href="#"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x" style="color:#00C3FC;"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                 
+                <a href="facebook.com"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x" style="color:#345AA9;"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                
+                <a href="#"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x" style="color:#0079B8;"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                 
+                <a href="#"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x" style="color:#EC4D29;"></i>
+                  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                </div>
+                
+            </div>
+            <hr/>
+            
+            <div id="copyright">
+                <div> © 2008 - 2016 Encoam Solutions LTD. ALL RIGHTS RESERVED.</div>
+                <div><a href="#">Terms of Use</a><a href="#">Privacy Policies</a></div>
+                <div> </div>
+            </div>                
+        </div>
+    </body>
+</html>
