@@ -1,0 +1,90 @@
+#box{
+    width: 50%;
+    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: block;
+    float: left;
+    background-color: #3c3d45;
+    padding:3%;
+}
+
+#box #opt{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+#opt #log{
+    width: 40%;
+    float: left;
+    padding: 10px;
+    padding-left: 5%;
+     padding-right: 5%;
+    background-color: #71d2b8;
+    z-index: 1000;
+    
+}
+#opt #sign{
+    width: 40%;
+    padding: 10px;
+    padding-left: 5%;
+     padding-right: 5%;
+    float: left;
+    background-color: #6c7e79;
+    z-index: 1000;
+    
+}
+#logi{
+    width: 90%;
+    display: block;
+    padding: 5%;
+    text-align: center;
+    clear: both;
+    float: left;
+}
+#logi h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+#signi{
+    width:90%;
+    display:none;  
+    padding: 5%;
+     clear: both;
+    text-align: center;
+    float: left;
+}
+#signi h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+#box input{
+    width: 90%;
+    padding: 10px;
+    padding-left: 5%;
+     padding-right: 5%;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;   
+   background-color: #3c3d45;
+}
+submit{
+    background-color: #rjgje;
+    font-size: 50px;
+    width: 50%;
+}
+@media all and (max-width: 800px){
+    #box{
+    width: 80%; 
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    padding:3%;
+    }
+}

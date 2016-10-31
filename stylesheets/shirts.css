@@ -1,0 +1,85 @@
+#footer hr{
+    margin:0.5px;
+}
+#footer .foot h3{
+    margin-left: 50px;
+}
+#footer #options{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #3b3838;
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+#footer #options ul{
+    list-style: none;
+    margin-top: 10px;
+}
+#footer #options li{
+    text-decoration: none; 
+    margin-left: 10px;
+    
+}
+#footer .foot h3{
+    margin-left: 50px;
+}
+#footer #options a{
+    text-decoration: none; 
+    color: white;
+}
+#footer #options a:hover{
+    text-decoration: none; 
+    color: #cff5f2;
+}
+#footer #options .foot{
+    float: left;
+    width: 18%;
+}
+#footer #follow li{
+    display: inline;
+}
+#footer #follow ul{
+    list-style: none;
+}
+#footer #follow{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+#options #follow img{
+    max-height: 25;
+    max-width: 25;
+    margin: 1px;
+}
+#top{
+
+   float: left;
+}
+#bottom{
+    float:left;
+    margin-bottom: 20px;
+}
+.srch{
+    width: 20%;
+    float: right;
+    margin-right: 15px;
+    
+}
+.srch input{
+    margin: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    height: 30px;
+    width: 80%;
+    font-size: 16px;
+    padding-left: 37px;
+}
+.srch img{
+    position: relative;
+    max-height: 25px;
+    top: -1px;
+    left:33px;
+    max-width: 25px;
+    
+}
